@@ -1,0 +1,32 @@
+{
+  "name": "article-to-epub",
+  "version": "1.0.0",
+  "description": "Web app that takes an article URL and produces a downloadable EPUB file for Apple Books-style reading.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@extractus/article-extractor": "^8.0.20",
+    "epub-gen-memory": "^1.1.2",
+    "next": "^16.1.6",
+    "node-html-parser": "^7.1.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "slugify": "^1.6.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3"
+  }
+}
