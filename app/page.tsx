@@ -112,7 +112,7 @@ export default function HomePage() {
                 required
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="https://example.com/blog/post"
+                placeholder="https://darioamodei.com/essay/machines-of-loving-grace"
                 className="mt-1.5 block w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 shadow-sm outline-none placeholder:text-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-500"
               />
             </div>
