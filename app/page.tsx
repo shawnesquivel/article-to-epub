@@ -97,8 +97,39 @@ export default function HomePage() {
           <h1 className="text-2xl font-semibold tracking-tight text-neutral-900">Convert</h1>
           <p className="mt-1 text-sm text-neutral-500">Paste an article URL and get a downloadable EPUB.</p>
 
+          {/* How it works */}
+          <div className="mt-8 flex items-center gap-6">
+            <div className="flex items-center gap-3">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-neutral-100">
+                <svg className="h-[18px] w-[18px] text-neutral-500" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5a17.92 17.92 0 0 1-8.716-2.247m0 0A8.966 8.966 0 0 1 3 12c0-1.264.26-2.467.732-3.558" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-neutral-900">Paste URL</p>
+                <p className="text-xs text-neutral-400">Any static article</p>
+              </div>
+            </div>
+
+            <svg className="h-4 w-4 shrink-0 text-neutral-300" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+
+            <div className="flex items-center gap-3">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-neutral-100">
+                <svg className="h-4.5 w-4.5 text-neutral-500" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-neutral-900">Get EPUB</p>
+                <p className="text-xs text-neutral-400">Ready for Apple Books</p>
+              </div>
+            </div>
+          </div>
+
           {/* Divider */}
-          <div className="mt-6 border-t border-neutral-200" />
+          <div className="mt-8 border-t border-neutral-200" />
 
           {/* Form */}
           <form onSubmit={onSubmit} className="mt-6 space-y-4">
